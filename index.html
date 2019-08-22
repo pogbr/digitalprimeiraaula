@@ -1,5 +1,35 @@
-ls
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Essencial</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
 
-
-ls
-
+    <body>
+        
+        <h2>Formulário</h2>
+        <form action="destino.html" method="post">
+            <input type="text" name="nome" id="nome" size="50" required autofocus placeholder="Insira seu nome">
+            <label for="telefone"> Entre com o seu telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+            <label for="email">Entre com o seu e-mail></label>
+            <input type="email" name="email" id="email">
+            <input type="number" name="empregos" id="empregos" min="0" max="10">
+            <label for="nascimento">Data de aniversário:</label>
+            <input type="date" name="nascimento" id="nascimento">
+            <input type="text" list="lojas" name="nome_loja" id="nome_loja">
+            <datalist id="lojas">
+            <option value="Centauro">Centauro</option>
+            <option value="Netshoes">Netshoes</option>
+            <option value="Dafiti">Dafiti</option>
+            <option value="Privalia">Privalia</option>
+            <option value="Casas Bahia">Casas Bahia</option>    
+            </datalist>
+                      
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+        </form> 
+    
+    </body>
+</html>
